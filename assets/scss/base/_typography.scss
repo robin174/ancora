@@ -1,0 +1,19 @@
+// Add typography from https://simplecss.org/
+// Add font
+
+h2 {
+	color: $color--primary;
+	font-size: 4rem;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.ut--uc {
+	@include headingUC;
+}

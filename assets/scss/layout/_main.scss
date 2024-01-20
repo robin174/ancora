@@ -1,0 +1,194 @@
+.templ--page-main {}
+
+
+// PAGE BUILDER
+.block--callout {
+	margin-top: $margin--large*4;
+	margin-bottom: $margin--large*4;
+	text-align: center;
+	font-size: 2.7rem;
+	line-height: 1.4;
+	& span {
+		display: block;
+		margin-bottom: $margin--general;
+	}
+}
+
+
+.block--5050 {
+	background-color: rgba(0,0,0,0.2);
+	& h2 {
+		color: $color--white;
+		font-size: 2.8rem;
+		margin-bottom: $margin--general;
+	}
+	& p {
+		font-size: 1.4rem;
+	}
+}
+
+
+// TO SORT BELOW
+.home {
+	& h1.large {
+		font-family: $brand--font-reg;
+		font-size: 8rem;
+		margin-bottom: $margin--small;
+		text-align: center;
+	}
+	& h3 {
+		margin-bottom: $margin--general;
+		& span {
+			line-height: 1.8;
+			padding: 5px 0;
+			font-size: 1.8rem;
+			color: white;
+			background: $color--primary;
+		}
+	}
+	& p {
+		font-size: 1.4rem;
+		line-height: 1.45;
+		&.skills {
+			font-family: $brand--font-semi;
+		}
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+	& h4 {
+		margin-bottom: 1px;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.home {
+		& h1.large {
+			text-align: left;
+			font-size: 10rem;
+		}
+		& h3 {
+			margin-bottom: $margin--general;
+			& span {
+				line-height: 1.8;
+				padding: 5px 0;
+				font-size: 2.2rem;
+				color: white;
+				background: $color--primary;
+			}
+		}
+	}
+}
+
+
+
+
+
+.org--profile-header {
+	& .container-fluid {
+		padding: 0;
+	}
+}
+
+.mol--profile-hero {
+	display: block;
+	& figure {
+		margin: 0 auto;
+		max-width: 1776px;
+	}
+}
+
+.atm--profile-blockquote {
+	margin: $margin--general*2 0;
+}
+
+.atm--profile-location {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: $padding--small*1.5 0;
+	margin: $margin--general*1.5 0;
+	& p, h4 {
+		margin-bottom: 0;
+	}
+}
+
+.atm--profile-description {
+	& p:last-child, h4, h5 {
+		margin-bottom: 0;
+	}
+}
+
+h2.atm--profile-title {}
+
+p.atm--profile-details {
+	font-size: 1.1rem;
+	& a {
+		color: $color--primary;
+		&:hover {
+			color: $color--secondary;
+		}
+	}
+}
+
+.atm--profile-entities {
+	margin: $margin--general 0;
+}
+
+.mol--profile-primary {
+	padding: 0;
+}
+
+.mol--profile-secondary {
+	margin-top: -70px;
+}
+
+@media (min-width: 768px) {
+	.mol--profile-primary {
+		padding: $padding--general*2.5 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.mol--profile-primary {
+		padding: $padding--general*3.5 0;
+	}
+}
+
+
+.mol--entity-wrapper {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	& .atm--entity-logo {
+		padding: 5px;
+		height: 50px;
+		width: 50px;
+	}
+	& .atm--entity-arrow {
+		background-color: lighten($color--primary, 6%);
+		&:hover {
+			background-color: $color--primary;
+		}
+		& a i {
+			color: $color--secondary;
+		}
+	}
+	& .atm--entity-details {
+		margin-left: 15px;
+		& .atm--entity-title {
+			font-size: 1.4rem;
+			line-height: 1.1; 
+			font-family: $brand--font-semi;
+		}
+		& .atm--entity-desc {
+			font-size: 1rem;
+			font-family: $brand--font-semi;
+		}
+	}
+}
+
+
+
