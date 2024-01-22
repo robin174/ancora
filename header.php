@@ -38,7 +38,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> style="background-color:<?php the_field('acp_background_colour', 'option'); ?>;">
 		<header> 
 			<div class="container-fluid container-md">
 				<?php get_template_part('template-parts/nav-walker5'); ?>

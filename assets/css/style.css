@@ -65,7 +65,6 @@ html {
 }
 
 body {
-  background-color: #101820;
   color: #fff;
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
   font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */

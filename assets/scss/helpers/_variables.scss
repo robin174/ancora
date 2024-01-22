@@ -104,7 +104,6 @@ html {
 }
 
 body {
-    background-color: $color--primary;
 	color: $color--white;
 	font-family: $brand--font-reg;
 	font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
