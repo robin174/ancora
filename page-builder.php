@@ -8,10 +8,7 @@ get_header(); ?>
 
 <section class="templ--page-main">
 	<section class="mol--page-main">
-
-		<!-- Page Builder -->
 		<?php get_template_part ('template-parts/unit-builder'); ?>
-
 	</section>
 </section>
 

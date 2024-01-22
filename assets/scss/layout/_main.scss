@@ -19,8 +19,8 @@
 
 // Page Builder - Callout
 .block--callout {
-	margin-top: $margin--large*4;
-	margin-bottom: $margin--large*4;
+	margin-top: $margin--xlarge*2;
+	margin-bottom: $margin--xlarge*2;
 	text-align: center;
 	font-size: 2.7rem;
 	line-height: 1.4;
@@ -45,6 +45,7 @@
 
 // Page Builder - Team
 .block--team {
+	margin-bottom: $margin--xlarge*2;
 	& h2 {
 		font-family: $brand--font-reg;
 		font-size: 2rem;
@@ -53,11 +54,20 @@
 	& h4 {
 		@include headingUC;
 		margin-bottom: $margin--general;
+		& a {
+			color: $color--white;
+			&:hover {
+				color: rgba($color--white, 0.5);
+			}
+		}
+		& i {
+			margin-right: 10px;
+		}
 	}
 	& p {
 		font-size: 1.2rem;
 		&.atm__intro {
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 		}
 		&:last-child {
 			margin-bottom: 0;

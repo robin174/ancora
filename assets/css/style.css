@@ -351,8 +351,8 @@ nav a:disabled, nav .nav-link:disabled {
 }
 
 .block--callout {
-  margin-top: 12rem;
-  margin-bottom: 12rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   text-align: center;
   font-size: 2.7rem;
   line-height: 1.4;
@@ -374,6 +374,9 @@ nav a:disabled, nav .nav-link:disabled {
   font-size: 1.4rem;
 }
 
+.block--team {
+  margin-bottom: 8rem;
+}
 .block--team h2 {
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -385,11 +388,20 @@ nav a:disabled, nav .nav-link:disabled {
   font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
   margin-bottom: 2rem;
 }
+.block--team h4 a {
+  color: #fff;
+}
+.block--team h4 a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.block--team h4 i {
+  margin-right: 10px;
+}
 .block--team p {
   font-size: 1.2rem;
 }
 .block--team p.atm__intro {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .block--team p:last-child {
   margin-bottom: 0;

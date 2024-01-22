@@ -95,7 +95,7 @@
 		 <?php if(get_row_layout() == 'page_template'): // layout: Page Callout ?>
 
 		 	<?php if (get_sub_field('select_template') === 'sectionteam') : ?>
-		 		<section>
+		 		<section class="block--team">
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10">
