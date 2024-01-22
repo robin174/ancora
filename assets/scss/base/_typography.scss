@@ -1,8 +1,11 @@
 // Add typography from https://simplecss.org/
 // Add font
+h1 {
+	color: $color--white;
+}
 
 h2 {
-	color: $color--primary;
+	color: $color--white;
 	font-size: 4rem;
 }
 

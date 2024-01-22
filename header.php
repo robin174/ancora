@@ -40,7 +40,7 @@
 
 	<body <?php body_class(); ?>>
 		<header> 
-			<div class="container">
+			<div class="container-fluid container-md">
 				<?php get_template_part('template-parts/nav-walker5'); ?>
 			</div>
 		</header>

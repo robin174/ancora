@@ -1,5 +1,5 @@
 footer {
-
+	background-color: rgba(0,0,0,0.1);
 	padding: $padding--general 0;
 	i {
 		color: $color--white;
@@ -18,12 +18,12 @@ footer {
 	a {
 		color: $color--white;
 		&:hover {
-			color: $color--highlight-light;
+			color: rgba($color--white, 0.5);
 		}
 		& i {
 			transition: 0.3s;
 			&:hover {
-				color: $color--secondary;
+				color: rgba($color--white, 0.5);
 			}	
 		}
 	}
@@ -42,11 +42,23 @@ footer {
 }
 
 .mol__unit-disclaimer {
-	margin-top: $margin--xlarge;
+	margin-top: $margin--large;
+	& h6 {
+		color: rgba($color--white, 0.2);
+	}
 	& p {
 		font-size: 0.9rem;
 		line-height: 1.2;
 		color: rgba($color--white, 0.2);
+	}
+}
+
+.mol__unit-copyright {
+	margin-top: $margin--small;
+	p.atm__copyright {
+	 	color: rgba($color--white,0.2);
+  		font-size: 1rem;
+  		margin-bottom: 0;
 	}
 }
 
@@ -64,13 +76,8 @@ footer {
  		margin-top: $padding--general;
   		font-size: 0.8rem;
 	}
-}
-
-@media (min-width: $media-tablet) {
-	.mol__unit-whoweare {
-		& p.atm__copyright {
-	 		margin-top: $padding--general*2;
-		}
+	& img {
+		width: 300px;
 	}
 }
 

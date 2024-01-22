@@ -93,8 +93,12 @@ a {
     padding: 0 180px;
   }
 }
+h1 {
+  color: #fff;
+}
+
 h2 {
-  color: #101820;
+  color: #fff;
   font-size: 4rem;
 }
 
@@ -330,6 +334,23 @@ nav a:disabled, nav .nav-link:disabled {
     color: #fff;
   }
 }
+.block--half-container {
+  position: relative;
+  height: 35vh;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(16, 24, 32, 0.6);
+}
+
+.block--half-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+
 .block--callout {
   margin-top: 12rem;
   margin-bottom: 12rem;
@@ -352,6 +373,27 @@ nav a:disabled, nav .nav-link:disabled {
 }
 .block--5050 p {
   font-size: 1.4rem;
+}
+
+.block--team h2 {
+  font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.block--team h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+.block--team p {
+  font-size: 1.2rem;
+}
+.block--team p.atm__intro {
+  font-size: 1.3rem;
+}
+.block--team p:last-child {
+  margin-bottom: 0;
 }
 
 .home h1.large {
@@ -498,6 +540,7 @@ p.atm--profile-details a:hover {
 }
 
 footer {
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem 0;
 }
 footer i {
@@ -518,13 +561,13 @@ footer a {
   color: #fff;
 }
 footer a:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 footer a i {
   transition: 0.3s;
 }
 footer a i:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 576px) {
@@ -538,12 +581,24 @@ footer a i:hover {
   }
 }
 .mol__unit-disclaimer {
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+.mol__unit-disclaimer h6 {
+  color: rgba(255, 255, 255, 0.2);
 }
 .mol__unit-disclaimer p {
   font-size: 0.9rem;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.2);
+}
+
+.mol__unit-copyright {
+  margin-top: 1rem;
+}
+.mol__unit-copyright p.atm__copyright {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .mol__unit-whoweare p {
@@ -559,12 +614,10 @@ footer a i:hover {
   margin-top: 2rem;
   font-size: 0.8rem;
 }
-
-@media (min-width: 768px) {
-  .mol__unit-whoweare p.atm__copyright {
-    margin-top: 4rem;
-  }
+.mol__unit-whoweare img {
+  width: 300px;
 }
+
 .mol__unit-contact {
   border-top: solid 1px #fff;
   padding-top: 1rem;

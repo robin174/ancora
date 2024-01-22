@@ -10,10 +10,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="mol__unit-whoweare">
-							<figure>
-								Logo
-							</figure>
-						 	<p class="atm__copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('acp_copyright', 'option'); ?></p>
+                        	<div>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-acp-logo.svg" alt="Ancora Capita Partners logo">
+							</div>
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
@@ -34,7 +33,7 @@
 						<div class="mol__unit-contact">
 							<h4>Social</h4>
 							<!-- LinkedIn -->
-							<?php if( get_field('f_con_linkedin', 'option') ): ?>
+							<?php if( get_field('acp_linkedin', 'option') ): ?>
 								<a href="<?php the_field('acp_linkedin', 'option'); ?>" title="<?php bloginfo( 'name' ); ?> on LinkedIn" target="_blank"><i class="fa-brands fa-lg fa-linkedin"></i></a>
 							<?php else: ?>
 								<i class="fa-brands fa-lg fa-linkedin inactive"></i>
@@ -50,6 +49,13 @@
 						</div>
 					</div>
 				<div>
+				<div class="row">
+					<div class="col-12">
+						<div class="mol__unit-copyright">
+							<p class="atm__copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('acp_copyright', 'option'); ?></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>
