@@ -470,12 +470,12 @@
       "oAP" : "\/page-builder.php",
       "oF" : 0
     },
-    "\/page-home.php" : {
+    "\/page-single-scroll.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/page-home.php",
+      "oAP" : "\/page-single-scroll.php",
       "oF" : 0
     },
     "\/page.php" : {
