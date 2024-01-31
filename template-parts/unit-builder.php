@@ -44,6 +44,7 @@
 				</div>
 			</section>
 		<?php endif; ?>
+
 		<?php if(get_row_layout() == 'page_5050'): // layout: Page 50/50 ?>
 			<section class="block--5050">
 				<div class="container-fluid">
@@ -92,8 +93,8 @@
 				</div>
 			</section>
 		<?php endif; ?>
-		 <?php if(get_row_layout() == 'page_template'): // layout: Page Callout ?>
 
+		<?php if(get_row_layout() == 'page_template'): ?>
 		 	<?php if (get_sub_field('select_template') === 'sectionteam') : ?>
 		 		<section class="block--team">
 					<div class="container">
@@ -105,7 +106,6 @@
 					</div>
 				</section>
 		 	<?php endif; ?>
-	    
 		<?php endif; ?>
 
 	</section>

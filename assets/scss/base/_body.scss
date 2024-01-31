@@ -42,3 +42,8 @@ a {
 		padding: 0 180px;
 	}
 }
+
+::selection {
+  color: white;
+  background-color: black;
+}

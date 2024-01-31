@@ -16,20 +16,21 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
-						<div class="mol__unit-contact">
+						<?php /* <div class="mol__unit-contact">
 							<h4>Phone</h4>
 							<span><?php the_field('acp_phone', 'option'); ?></span>
-						</div>
+						</div> */ ?>
                         <div class="mol__unit-contact">
                         	<h4>Address</h4>
 							<span><?php the_field('acp_address', 'option'); ?></span>
 						</div>
+						
 					</div>
 					<div class="col-12 col-md-6 offset-md-6 col-lg-3 offset-lg-0">
-                        <div class="mol__unit-contact">
+                        <?php /* <div class="mol__unit-contact">
                         	<h4>Email</h4>
 							<span><a href="mailto:<?php the_field('acp_email', 'option'); ?>" title="Email <?php the_title();?>"><?php the_field('acp_email', 'option'); ?></a></span>
-						</div>
+						</div> */ ?>
 						<div class="mol__unit-contact">
 							<h4>Social</h4>
 							<!-- LinkedIn -->

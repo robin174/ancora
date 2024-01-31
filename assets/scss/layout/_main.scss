@@ -66,11 +66,21 @@
 	}
 	& p {
 		font-size: 1.2rem;
-		&.atm__intro {
+		&.atm--intro {
 			font-size: 1.4rem;
 		}
 		&:last-child {
 			margin-bottom: 0;
+		}
+		&.atm--email {
+			font-size: 1rem;
+			& a {
+				color: $color--white;
+				text-decoration: underline;
+				&:hover {
+					color: rgba($color--white, 0.5);
+				}
+			}
 		}
 	}
 }

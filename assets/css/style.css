@@ -92,6 +92,11 @@ a {
     padding: 0 180px;
   }
 }
+::selection {
+  color: white;
+  background-color: black;
+}
+
 h1 {
   color: #fff;
 }
@@ -400,11 +405,21 @@ nav a:disabled, nav .nav-link:disabled {
 .block--team p {
   font-size: 1.2rem;
 }
-.block--team p.atm__intro {
+.block--team p.atm--intro {
   font-size: 1.4rem;
 }
 .block--team p:last-child {
   margin-bottom: 0;
+}
+.block--team p.atm--email {
+  font-size: 1rem;
+}
+.block--team p.atm--email a {
+  color: #fff;
+  text-decoration: underline;
+}
+.block--team p.atm--email a:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .home h1.large {
