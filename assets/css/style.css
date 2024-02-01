@@ -285,9 +285,8 @@ nav a:disabled, nav .nav-link:disabled {
 @media (max-width: 767px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: blur(7px);
-    background-color: rgba(17, 17, 17, 0.8);
+    background-color: rgba(0, 0, 0, 0.33);
     color: #fff;
-    border-left: 5px solid black;
   }
   .offcanvas.offcanvas-end h2 {
     color: white;
@@ -318,17 +317,31 @@ nav a:disabled, nav .nav-link:disabled {
     color: #fff;
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
-    background: unset;
     opacity: unset;
-    background: yellow;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.12);
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close i {
-    color: green;
+    color: rgba(255, 255, 255, 0.5);
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
-    color: orange;
+    color: #fff;
   }
 }
+.custom-toggler.navbar-toggler {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.custom-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.btn-close {
+  width: 2rem;
+  height: 2rem;
+  background: unset !important;
+}
+
 @media (min-width: 768px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: unset;
