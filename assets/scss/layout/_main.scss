@@ -35,7 +35,7 @@
 	background-color: rgba(0,0,0,0.2);
 	& .mol--5050 {
 		color: $color--white; 
-		padding: $padding--small;
+		padding: $padding--general $padding--small;
 	}
 	& h2 {
 		color: $color--white;
