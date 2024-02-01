@@ -383,6 +383,10 @@ nav a:disabled, nav .nav-link:disabled {
 .block--5050 {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.block--5050 .mol--5050 {
+  color: #fff;
+  padding: 1rem;
+}
 .block--5050 h2 {
   color: #fff;
   font-size: 2.8rem;
@@ -435,6 +439,11 @@ nav a:disabled, nav .nav-link:disabled {
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media (min-width: 768px) {
+  .block--5050 .mol--5050 {
+    padding: 4rem;
+  }
+}
 .home h1.large {
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
   font-size: 8rem;

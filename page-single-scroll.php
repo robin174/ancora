@@ -61,7 +61,7 @@ get_header(); ?>
 												</div>
 											</div>
 											<div class="col-12 col-lg-6 align-self-center order-2">
-												<div style="padding:100px;color: white;">
+												<div class="mol--5050">
 													<?php if(get_sub_field('sp_title')) : ?>
 														<h2><?php the_sub_field('sp_title'); ?></h2>
 													<?php endif; ?>
@@ -74,7 +74,7 @@ get_header(); ?>
 									<?php } elseif(get_sub_field('sp_image_position') == 'imageright') { ?>
 										<div class="row g-0 d-flex">
 											<div class="col-12 col-lg-6 align-self-center order-2 order-lg-1">
-												<div style="padding:100px;color: white;">
+												<div class="mol--5050">
 													<?php if(get_sub_field('sp_title')) : ?>
 														<h2><?php the_sub_field('sp_title'); ?></h2>
 													<?php endif; ?>
