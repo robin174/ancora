@@ -1,6 +1,6 @@
 footer {
 	background-color: rgba(0,0,0,0.1);
-	padding: $padding--general 0;
+	padding: $padding--general $padding--small;
 	i {
 		color: $color--white;
 		margin-right: $margin--small*0.5;
@@ -11,9 +11,6 @@ footer {
 	i.inactive {
 	  cursor: not-allowed;
 	  color: rgba($color--white,0.3);
-	}
-	.highlight {
-		color: $color--highlight-light;
 	}
 	a {
 		color: $color--white;
@@ -29,20 +26,35 @@ footer {
 	}
 }
 
-@media (min-width: $media-mobile) {
-	footer {
-		padding: $padding--general*2 0;
+.mol--unit-logo {
+	padding-top: $padding--small;
+	margin-bottom: $margin--small*3;
+	 & img {
+		width: 300px;
+		margin-bottom: $margin--general;
 	}
 }
 
-@media (min-width: $media-tablet) {
-	footer {
-		padding: $padding--general*3 0;
+.mol--unit-contact {
+	border-top: solid 1px $color--highlight-dark;
+	padding-top: $padding--small;
+	padding-bottom: $margin--small*3;
+	color: white;
+  	&:last-child {
+  		margin-bottom: 0;
+  	}
+  	& h4 {
+		@include headingUC;
+		color: $color--secondary;
+		font-size: 0.9rem;
+		margin-bottom: 8px;
+	}
+	& span {
+		font-size: 1.2rem;
 	}
 }
 
-.mol__unit-disclaimer {
-	margin-top: $margin--large;
+.mol--unit-disclaimer {
 	& h6 {
 		color: rgba($color--white, 0.2);
 	}
@@ -53,50 +65,32 @@ footer {
 	}
 }
 
-.mol__unit-copyright {
+.mol--unit-copyright {
 	margin-top: $margin--small;
-	p.atm__copyright {
+	p.atm--copyright {
 	 	color: rgba($color--white,0.2);
   		font-size: 1rem;
   		margin-bottom: 0;
 	}
 }
 
-.mol__unit-whoweare {
-	& p {
-		font-size: 2rem;
-		line-height: 1.4;
-		color: $color--white;
-		font-weight: 400;
-		letter-spacing: 0.01em;
-		padding-right: $padding--general*2;
-	}
-	& p.atm__copyright {
-		color: rgba($color--white,0.4);
- 		margin-top: $padding--general;
-  		font-size: 0.8rem;
-	}
-	& img {
-		width: 300px;
+@media (min-width: $media-mobile) {
+	footer {
+		padding: $padding--general*2 0;
 	}
 }
 
-
-.mol__unit-contact {
-  border-top: solid 1px $color--highlight-dark;
-  padding-top: $padding--small;
-  margin-bottom: $margin--small*3;
-  color: white;
-  &:last-child {
-  	margin-bottom: 0;
-  }
-  & h4 {
-  	@include headingUC;
-  	color: $color--secondary;
-  	font-size: 0.9rem;
-  	margin-bottom: 8px;
-  }
-  & span {
-  	font-size: 1.2rem;
-  }
+@media (min-width: $media-tablet) {
+	footer {
+		padding: $padding--general*3 0;
+	}
+	.mol--unit-logo {
+		border-top: solid 1px $color--highlight-dark;
+	 	& img {
+			margin-bottom: 0;
+		}
+	}
+	.mol--unit-disclaimer {
+		margin-top: $margin--large;
+	}
 }

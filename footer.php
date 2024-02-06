@@ -9,7 +9,7 @@
 			<div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <div class="mol__unit-whoweare">
+                        <div class="mol--unit-logo">
                         	<div>
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-acp-logo.svg" alt="Ancora Capita Partners logo">
 							</div>
@@ -20,7 +20,7 @@
 							<h4>Phone</h4>
 							<span><?php the_field('acp_phone', 'option'); ?></span>
 						</div> */ ?>
-                        <div class="mol__unit-contact">
+                        <div class="mol--unit-contact">
                         	<h4>Address</h4>
 							<span><?php the_field('acp_address', 'option'); ?></span>
 						</div>
@@ -31,7 +31,7 @@
                         	<h4>Email</h4>
 							<span><a href="mailto:<?php the_field('acp_email', 'option'); ?>" title="Email <?php the_title();?>"><?php the_field('acp_email', 'option'); ?></a></span>
 						</div> */ ?>
-						<div class="mol__unit-contact">
+						<div class="mol--unit-contact">
 							<h4>Social</h4>
 							<!-- LinkedIn -->
 							<?php if( get_field('acp_linkedin', 'option') ): ?>
@@ -44,7 +44,7 @@
 				</div>
 				<div class="row">
                     <div class="col-12">
-						<div class="mol__unit-disclaimer">
+						<div class="mol--unit-disclaimer">
 							<h6>Disclaimer</h6>
 							<?php the_field('acp_disclaimer', 'option'); ?>
 						</div>
@@ -52,8 +52,8 @@
 				<div>
 				<div class="row">
 					<div class="col-12">
-						<div class="mol__unit-copyright">
-							<p class="atm__copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('acp_copyright', 'option'); ?></p>
+						<div class="mol--unit-copyright">
+							<p class="atm--copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('acp_copyright', 'option'); ?></p>
 						</div>
 					</div>
 				</div>

@@ -22,7 +22,7 @@
 	padding-top: $padding--xlarge*2;
 	padding-bottom: $padding--xlarge*2;
 	text-align: center;
-	font-size: 2.7rem;
+	font-size: 2rem;
 	line-height: 1.4;
 	& span {
 		display: block;
@@ -32,13 +32,14 @@
 
 // Page Builder - Callout
 .block--5050 {
-	background-color: rgba(0,0,0,0.2);
+	// background-color: rgba(0,0,0,0.2);
+	background-color: $color--white; 
 	& .mol--5050 {
-		color: $color--white; 
+		color: $color--primary; 
 		padding: $padding--general $padding--small;
 	}
 	& h2 {
-		color: $color--white;
+		color: $color--primary; 
 		font-size: 2.8rem;
 		margin-bottom: $margin--general;
 	}
@@ -50,6 +51,9 @@
 // Page Builder - Team
 .block--team {
 	margin-bottom: $margin--xlarge*2;
+	& .mol--unit-team {
+		padding: 0 $padding--general;
+	}
 	& h2 {
 		font-family: $brand--font-reg;
 		font-size: 2rem;

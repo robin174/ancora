@@ -372,7 +372,7 @@ nav a:disabled, nav .nav-link:disabled {
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 .block--callout span {
@@ -381,14 +381,14 @@ nav a:disabled, nav .nav-link:disabled {
 }
 
 .block--5050 {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 .block--5050 .mol--5050 {
-  color: #fff;
+  color: #101820;
   padding: 2rem 1rem;
 }
 .block--5050 h2 {
-  color: #fff;
+  color: #101820;
   font-size: 2.8rem;
   margin-bottom: 2rem;
 }
@@ -398,6 +398,9 @@ nav a:disabled, nav .nav-link:disabled {
 
 .block--team {
   margin-bottom: 8rem;
+}
+.block--team .mol--unit-team {
+  padding: 0 1rem;
 }
 .block--team h2 {
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
@@ -589,7 +592,7 @@ p.atm--profile-details a:hover {
 
 footer {
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 footer i {
   color: #fff;
@@ -601,9 +604,6 @@ footer i:last-child {
 footer i.inactive {
   cursor: not-allowed;
   color: rgba(255, 255, 255, 0.3);
-}
-footer .highlight {
-  color: #fff;
 }
 footer a {
   color: #fff;
@@ -618,6 +618,54 @@ footer a i:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.mol--unit-logo {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+.mol--unit-logo img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.mol--unit-contact {
+  border-top: solid 1px #fff;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+.mol--unit-contact:last-child {
+  margin-bottom: 0;
+}
+.mol--unit-contact h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.mol--unit-contact span {
+  font-size: 1.2rem;
+}
+
+.mol--unit-disclaimer h6 {
+  color: rgba(255, 255, 255, 0.2);
+}
+.mol--unit-disclaimer p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.mol--unit-copyright {
+  margin-top: 1rem;
+}
+.mol--unit-copyright p.atm--copyright {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
 @media (min-width: 576px) {
   footer {
     padding: 4rem 0;
@@ -627,62 +675,13 @@ footer a i:hover {
   footer {
     padding: 6rem 0;
   }
-}
-.mol__unit-disclaimer {
-  margin-top: 3rem;
-}
-.mol__unit-disclaimer h6 {
-  color: rgba(255, 255, 255, 0.2);
-}
-.mol__unit-disclaimer p {
-  font-size: 0.9rem;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.2);
-}
-
-.mol__unit-copyright {
-  margin-top: 1rem;
-}
-.mol__unit-copyright p.atm__copyright {
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
-.mol__unit-whoweare p {
-  font-size: 2rem;
-  line-height: 1.4;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  padding-right: 4rem;
-}
-.mol__unit-whoweare p.atm__copyright {
-  color: rgba(255, 255, 255, 0.4);
-  margin-top: 2rem;
-  font-size: 0.8rem;
-}
-.mol__unit-whoweare img {
-  width: 300px;
-}
-
-.mol__unit-contact {
-  border-top: solid 1px #fff;
-  padding-top: 1rem;
-  margin-bottom: 3rem;
-  color: white;
-}
-.mol__unit-contact:last-child {
-  margin-bottom: 0;
-}
-.mol__unit-contact h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-size: 0.9rem;
-  margin-bottom: 8px;
-}
-.mol__unit-contact span {
-  font-size: 1.2rem;
+  .mol--unit-logo {
+    border-top: solid 1px #fff;
+  }
+  .mol--unit-logo img {
+    margin-bottom: 0;
+  }
+  .mol--unit-disclaimer {
+    margin-top: 3rem;
+  }
 }
