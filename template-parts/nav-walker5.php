@@ -1,4 +1,4 @@
- <nav class="navbar navbar-expand-lg">
+ <nav class="navbar navbar-expand-md">
 	<?php if ( is_front_page() && is_home() ) : ?>
 		<h1><?php bloginfo( 'name' ); ?></h1>
 	<?php else : ?>

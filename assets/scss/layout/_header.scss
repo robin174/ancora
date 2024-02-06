@@ -1,3 +1,14 @@
 header {
 	background-color: rgba(0,0,0,0.2);
 }
+
+.sticky-header {
+	position: fixed;
+	top: 0;
+	z-index: 500;
+}
+
+/* To include WordPress Admin */
+.admin-bar .sticky-header {
+	top: 32px;
+}

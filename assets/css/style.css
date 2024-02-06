@@ -207,6 +207,17 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+}
+
+/* To include WordPress Admin */
+.admin-bar .sticky-header {
+  top: 32px;
+}
+
 nav a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -237,7 +248,7 @@ nav h1, nav h1 a.navbar-brand {
   letter-spacing: 0.2em;
   font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #fff;
   margin-bottom: 0;
 }
@@ -249,6 +260,7 @@ nav a, nav .nav-link {
   letter-spacing: 0.2em;
   font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
   color: #fff;
+  font-size: 0.95rem;
 }
 nav a:link, nav .nav-link:link {
   color: #fff;
