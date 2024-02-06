@@ -97,12 +97,7 @@ a {
   background-color: black;
 }
 
-h1 {
-  color: #fff;
-}
-
 h2 {
-  color: #fff;
   font-size: 4rem;
 }
 
@@ -351,6 +346,16 @@ nav a:disabled, nav .nav-link:disabled {
     color: #fff;
   }
 }
+.mol--theme-light {
+  background-color: #fff;
+  color: #101820;
+}
+
+.mol--theme-dark {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
 .block--half-container {
   position: relative;
   height: 35vh;
@@ -369,26 +374,29 @@ nav a:disabled, nav .nav-link:disabled {
 }
 
 .block--callout {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   text-align: center;
   font-size: 2rem;
   line-height: 1.4;
 }
+.block--callout .mol---block-callout {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .block--callout span {
   display: block;
+}
+.block--callout h2 {
+  font-size: 2.8rem;
   margin-bottom: 2rem;
 }
-
-.block--5050 {
-  background-color: #fff;
+.block--callout p {
+  font-size: 1.4rem;
 }
+
 .block--5050 .mol--5050 {
-  color: #101820;
   padding: 2rem 1rem;
 }
 .block--5050 h2 {
-  color: #101820;
   font-size: 2.8rem;
   margin-bottom: 2rem;
 }
@@ -400,7 +408,7 @@ nav a:disabled, nav .nav-link:disabled {
   margin-bottom: 8rem;
 }
 .block--team .mol--unit-team {
-  padding: 0 1rem;
+  padding: 1rem 2rem;
 }
 .block--team h2 {
   font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
@@ -447,149 +455,6 @@ nav a:disabled, nav .nav-link:disabled {
     padding: 4rem;
   }
 }
-.home h1.large {
-  font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
-  font-size: 8rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.home h3 {
-  margin-bottom: 2rem;
-}
-.home h3 span {
-  line-height: 1.8;
-  padding: 5px 0;
-  font-size: 1.8rem;
-  color: white;
-  background: #101820;
-}
-.home p {
-  font-size: 1.4rem;
-  line-height: 1.45;
-}
-.home p.skills {
-  font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-}
-.home p:last-child {
-  margin-bottom: 30px;
-}
-.home h4 {
-  margin-bottom: 1px;
-}
-
-@media (min-width: 768px) {
-  .home h1.large {
-    text-align: left;
-    font-size: 10rem;
-  }
-  .home h3 {
-    margin-bottom: 2rem;
-  }
-  .home h3 span {
-    line-height: 1.8;
-    padding: 5px 0;
-    font-size: 2.2rem;
-    color: white;
-    background: #101820;
-  }
-}
-.org--profile-header .container-fluid {
-  padding: 0;
-}
-
-.mol--profile-hero {
-  display: block;
-}
-.mol--profile-hero figure {
-  margin: 0 auto;
-  max-width: 1776px;
-}
-
-.atm--profile-blockquote {
-  margin: 4rem 0;
-}
-
-.atm--profile-location {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  padding: 1.5rem 0;
-  margin: 3rem 0;
-}
-.atm--profile-location p, .atm--profile-location h4 {
-  margin-bottom: 0;
-}
-
-.atm--profile-description p:last-child, .atm--profile-description h4, .atm--profile-description h5 {
-  margin-bottom: 0;
-}
-
-p.atm--profile-details {
-  font-size: 1.1rem;
-}
-p.atm--profile-details a {
-  color: #101820;
-}
-p.atm--profile-details a:hover {
-  color: #fff;
-}
-
-.atm--profile-entities {
-  margin: 2rem 0;
-}
-
-.mol--profile-primary {
-  padding: 0;
-}
-
-.mol--profile-secondary {
-  margin-top: -70px;
-}
-
-@media (min-width: 768px) {
-  .mol--profile-primary {
-    padding: 5rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .mol--profile-primary {
-    padding: 7rem 0;
-  }
-}
-.mol--entity-wrapper {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.mol--entity-wrapper:last-child {
-  margin-bottom: 0;
-}
-.mol--entity-wrapper .atm--entity-logo {
-  padding: 5px;
-  height: 50px;
-  width: 50px;
-}
-.mol--entity-wrapper .atm--entity-arrow {
-  background-color: #1a2734;
-}
-.mol--entity-wrapper .atm--entity-arrow:hover {
-  background-color: #101820;
-}
-.mol--entity-wrapper .atm--entity-arrow a i {
-  color: #fff;
-}
-.mol--entity-wrapper .atm--entity-details {
-  margin-left: 15px;
-}
-.mol--entity-wrapper .atm--entity-details .atm--entity-title {
-  font-size: 1.4rem;
-  line-height: 1.1;
-  font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-}
-.mol--entity-wrapper .atm--entity-details .atm--entity-desc {
-  font-size: 1rem;
-  font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-}
-
 footer {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 2rem 1rem;
