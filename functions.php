@@ -31,18 +31,12 @@ add_action( 'wp_enqueue_scripts', 'ancoracapital_scripts' );
 // ACF Options
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
-        'menu_title'    => 'Additional Settings',
+        'menu_title'    => 'Additional Content',
         'menu_slug'     => 'additional-site-settings',
         'parent_slug'   => '',
         'capability'    => 'edit_posts',
         'icon_url'      => 'dashicons-admin-site-alt',
         'redirect'      => true
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'    => 'General Settings',
-        'menu_title'    => 'General Settings',
-        'parent_slug'   => 'additional-site-settings',
     ));
 
     acf_add_options_sub_page(array(
