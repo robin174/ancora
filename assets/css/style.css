@@ -358,6 +358,12 @@ nav a:disabled, nav .nav-link:disabled {
     color: #fff;
   }
 }
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .mol--theme-light {
   background-color: #fff;
   color: #101820;
@@ -370,7 +376,7 @@ nav a:disabled, nav .nav-link:disabled {
 
 .block--half-container {
   position: relative;
-  height: 35vh;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 100vmax rgba(16, 24, 32, 0.6);
@@ -402,10 +408,11 @@ nav a:disabled, nav .nav-link:disabled {
   margin-bottom: 2rem;
 }
 .block--callout p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .block--5050 .mol--5050 {
+  max-width: 900px;
   padding: 2rem 1rem;
 }
 .block--5050 h2 {
@@ -413,7 +420,7 @@ nav a:disabled, nav .nav-link:disabled {
   margin-bottom: 2rem;
 }
 .block--5050 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .block--team {

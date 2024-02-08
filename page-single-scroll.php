@@ -87,8 +87,8 @@ get_header(); ?>
 											</div>
 										<?php } elseif(get_sub_field('sp_image_position') == 'imageright') { ?>
 											<div class="row g-0 d-flex">
-												<div class="col-12 col-lg-6 align-self-center order-2 order-lg-1">
-													<div class="mol--5050">
+												<div class="col-12 col-lg-6 align-self-center order-2 order-lg-1 d-flex">
+													<div class="mol--5050 ms-auto">
 														<?php if(get_sub_field('sp_title')) : ?>
 															<h2><?php the_sub_field('sp_title'); ?></h2>
 														<?php endif; ?>
