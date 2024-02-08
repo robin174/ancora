@@ -204,7 +204,12 @@ figure.atm--headshot {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #0b1016;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
 }
 
 .sticky-header {
@@ -376,7 +381,7 @@ nav a:disabled, nav .nav-link:disabled {
 
 .block--half-container {
   position: relative;
-  height: 40vh;
+  height: 45vh;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 100vmax rgba(16, 24, 32, 0.6);
@@ -475,7 +480,7 @@ nav a:disabled, nav .nav-link:disabled {
   }
 }
 footer {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 2rem 1rem;
 }
 footer i {

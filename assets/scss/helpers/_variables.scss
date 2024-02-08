@@ -8,6 +8,8 @@ $color--black: #000; // black
 $color--highlight-light: $color--secondary;
 $color--highlight-dark: $color--secondary;
 
+$color--primary-dark: darken($color--primary,3%);
+
 $box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
 $box--shadow-dark: 0 0 10px rgba(0,0,0,0.7); 
 
