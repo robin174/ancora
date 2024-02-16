@@ -7,11 +7,19 @@ header {
 	width:100%;
 }
 
-.admin-bar header {
-	top: 42px;
+@media(min-width:$media-mobile ) {
+	.admin-bar header {
+		top: 0;
+	}
 }
 
 @media(min-width:$media-tablet ) {
+	.admin-bar header {
+		top: 42px;
+	}
+}
+
+@media(min-width:$media-desktop ) {
 	.admin-bar header {
 		top: 32px;
 	}

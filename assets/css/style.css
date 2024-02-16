@@ -212,11 +212,17 @@ header {
   width: 100%;
 }
 
-.admin-bar header {
-  top: 42px;
+@media (min-width: 576px) {
+  .admin-bar header {
+    top: 0;
+  }
 }
-
 @media (min-width: 768px) {
+  .admin-bar header {
+    top: 42px;
+  }
+}
+@media (min-width: 992px) {
   .admin-bar header {
     top: 32px;
   }
