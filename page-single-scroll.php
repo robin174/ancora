@@ -36,7 +36,13 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<?php if(get_row_layout() == 'section_callout'): ?>
-					    	<section class="block--callout">
+
+							<?php if(get_sub_field('sp_callout_align') == 'aligncenter')  { ?>
+					    		<section class="block--callout text-center">
+					    	<?php } elseif(get_sub_field('sp_callout_align') == 'alignleft') { ?>
+					    		<section class="block--callout">
+					    	<?php } ?>
+
 					    		<?php if(get_sub_field('sp_theme_select') == 'themelight')  { ?>
 									<div class="mol--theme-light">
 								<?php } elseif(get_sub_field('sp_theme_select') == 'themelight') { ?>
@@ -45,13 +51,17 @@ get_header(); ?>
 										<div class="mol---block-callout">
 											<div class="container">
 												<div class="row justify-content-center">
-													<div class="col-12 col-md-12">
+													<div class="col-12 col-md-10">
+														<?php if(get_sub_field('sp_callout_title')) : ?>
+															<h2><?php the_sub_field('sp_callout_title'); ?></h2>
+														<?php endif; ?>
 														<span><?php the_sub_field('sp_callout'); ?></span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+
 							</section>
 						<?php endif; ?>
 

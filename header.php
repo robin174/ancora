@@ -39,7 +39,7 @@
 	</head>
 
 	<body <?php body_class(); ?> style="background-color:<?php the_field('acp_background_colour', 'option'); ?>;">
-		<header class="d-none d-md-block"> 
+		<header> 
 			<div class="container-fluid container-lg" >
 				<?php get_template_part('template-parts/nav-walker5'); ?>
 			</div>

@@ -59,6 +59,17 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			// To close mobile menu on click
+			// https://manos.malihu.gr/how-to-close-mobile-menu-with-page-scroll-to-id/
+			(function($){
+    			$(window).on("load",function(){
+       				$(document).on("click",".offcanvas.offcanvas-end.show .menu-item ._mPS2id-h",function(){
+            			$(".navbar-toggler").trigger("click");
+        			});
+    			});
+			})(jQuery);
+		</script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

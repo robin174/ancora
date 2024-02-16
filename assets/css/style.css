@@ -374,7 +374,7 @@ nav a:disabled, nav .nav-link:disabled {
 
 .block--half-container {
   position: relative;
-  height: 45vh;
+  height: 600px;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 100vmax rgba(16, 24, 32, 0.6);
@@ -390,13 +390,12 @@ nav a:disabled, nav .nav-link:disabled {
 }
 
 .block--callout {
-  text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 .block--callout .mol---block-callout {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .block--callout span {
   display: block;
@@ -418,11 +417,12 @@ nav a:disabled, nav .nav-link:disabled {
   margin-bottom: 2rem;
 }
 .block--5050 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .block--team {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 .block--team .mol--unit-team {
   padding: 2rem;
@@ -448,10 +448,10 @@ nav a:disabled, nav .nav-link:disabled {
   margin-right: 10px;
 }
 .block--team p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .block--team p.atm--intro {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .block--team p:last-child {
   margin-bottom: 0;
