@@ -18,7 +18,7 @@
 // Page Builder - Full width image and logo
 .block--half-container {
 	position:relative;
-	height: 600px;
+	height: 520px;
 	background-position:center;
 	background-size:cover;
 	box-shadow: inset 0 0 0 100vmax rgba(16,24,32,0.6);
@@ -116,6 +116,9 @@
 }
 
 @media (min-width: $media-tablet) {
+	.block--half-container {
+		height: 600px;
+	}
 	.block--5050 {
 		& .mol--5050 {
 			padding: $padding--xlarge;
