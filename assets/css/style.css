@@ -483,7 +483,7 @@ nav a:disabled, nav .nav-link:disabled {
 }
 @media (min-width: 1400px) {
   .block--half-container {
-    height: 680px;
+    height: 690px;
   }
   .block--callout .mol---block-callout {
     padding-top: 6rem;
