@@ -485,9 +485,9 @@ nav a:disabled, nav .nav-link:disabled {
   .block--half-container {
     height: 700px;
   }
-  .mol---block-callout {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .block--callout .mol---block-callout {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 footer {
