@@ -23,13 +23,13 @@
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" />
 
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-08Q1RE0R8Y"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNS2LBS4N4"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
-			gtag('config', 'G-08Q1RE0R8Y');
+			gtag('config', 'G-PNS2LBS4N4');
 		</script>
 
 		<!-- Font: Icon

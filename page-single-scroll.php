@@ -37,7 +37,7 @@ get_header(); ?>
 
 						<?php if(get_row_layout() == 'section_callout'): ?>
 
-							<?php if(get_sub_field('sp_callout_align') == 'aligncenter')  { ?>
+							<?php if(get_sub_field('sp_callout_align') == 'aligncenter') { ?>
 					    		<section class="block--callout text-center">
 					    	<?php } elseif(get_sub_field('sp_callout_align') == 'alignleft') { ?>
 					    		<section class="block--callout">
