@@ -125,3 +125,13 @@
 		}
 	}
 }
+
+@media (min-width: $media-xwide) {
+	.block--half-container {
+		height: 720px;
+	}
+	.mol---block-callout {
+		padding-top: $padding--xxlarge;
+		padding-bottom: $padding--xxlarge;
+	}
+}
