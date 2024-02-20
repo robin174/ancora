@@ -483,11 +483,11 @@ nav a:disabled, nav .nav-link:disabled {
 }
 @media (min-width: 1400px) {
   .block--half-container {
-    height: 720px;
+    height: 700px;
   }
   .mol---block-callout {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
   }
 }
 footer {
