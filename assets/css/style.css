@@ -162,7 +162,7 @@ a[class*=atm--button-]:hover {
 .atm--button-main {
   padding: 12px 28px;
   padding-right: 40px;
-  background-color: #1a2734;
+  background-color: rgb(26.2, 39.3, 52.4);
 }
 .atm--button-main span {
   letter-spacing: 0.02em;
@@ -182,7 +182,7 @@ a[class*=atm--button-]:hover {
 .atm--button-square-i {
   height: 50px;
   width: 50px;
-  background-color: #1a2734;
+  background-color: rgb(26.2, 39.3, 52.4);
 }
 .atm--button-square-i i {
   color: #fff;
@@ -204,7 +204,7 @@ figure.atm--headshot {
 }
 
 header {
-  background-color: #0b1016;
+  background-color: rgb(10.9, 16.35, 21.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
@@ -393,6 +393,17 @@ nav a:disabled, nav .nav-link:disabled {
   transform: translate(-50%, -50%);
   width: 70%;
   text-align: center;
+}
+
+.block--slider {
+  position: relative;
+}
+.block--slider .block--half-inner {
+  z-index: 2;
+  pointer-events: none;
+}
+.block--slider .splide__arrows, .block--slider .splide__pagination {
+  z-index: 3;
 }
 
 .block--callout {

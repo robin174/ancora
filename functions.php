@@ -24,8 +24,51 @@ function ancoracapital_scripts() {
 
 	// load Bootstrap JS v5.1
 	wp_enqueue_script( 'ancoracapital-bootstrap-js', THEME_DIR_URI . '/includes/js/bootstrap.min.js', array('jquery') );
+
+	// load Splide v4 (image slider) on the Single Scroll template only
+	if ( is_page_template('page-single-scroll.php') ) {
+		wp_enqueue_style( 'splide-css', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css', [], '4.1.4' );
+		wp_enqueue_script( 'splide-js', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', [], '4.1.4', true );
+		wp_add_inline_script( 'splide-js', "
+			document.addEventListener('DOMContentLoaded', function () {
+				document.querySelectorAll('.js--image-slider').forEach(function (el) {
+					new Splide(el, {
+						type: 'fade',
+						rewind: true,
+						autoplay: true,
+						interval: 5000,
+						speed: 1000,
+						pauseOnHover: false,
+						arrows: el.querySelectorAll('.splide__slide').length > 1,
+						pagination: el.querySelectorAll('.splide__slide').length > 1
+					}).mount();
+				});
+			});
+		" );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'ancoracapital_scripts' );
+
+
+/* Slider: return the image URLs from a 'section_slider_repeater' value.
+   Works whether the ACF 'slider_image' field returns an array, ID or URL; skips empty rows. */
+function ancoracapital_slider_urls( $rows ) {
+	$urls = [];
+	foreach ( (array) $rows as $row ) {
+		$img = $row['slider_image'] ?? '';
+		if ( is_array( $img ) ) {
+			$url = $img['url'] ?? '';
+		} elseif ( is_numeric( $img ) ) {
+			$url = wp_get_attachment_image_url( $img, 'full' );
+		} else {
+			$url = $img;
+		}
+		if ( $url ) {
+			$urls[] = $url;
+		}
+	}
+	return $urls;
+}
 
 
 // ACF Options

@@ -27,9 +27,22 @@
 	position:absolute;
 	left: 50%;
 	top: 50%;
-	transform:translate(-50%,-50%); 
+	transform:translate(-50%,-50%);
 	width: 70%;
 	text-align: center;
+}
+
+// Page Builder - Image slider (Splide) with logo fixed on top
+.block--slider {
+	position: relative;
+	& .block--half-inner {
+		z-index: 2;
+		pointer-events: none; // keep arrows/dots clickable
+	}
+	& .splide__arrows,
+	& .splide__pagination {
+		z-index: 3;
+	}
 }
 
 // Page Builder - Callout

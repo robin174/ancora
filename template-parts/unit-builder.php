@@ -2,23 +2,6 @@
 
 	<section class="org--page-builder">
 
-
-		<?php /*
-		<?php if(get_row_layout() == 'page_image'): // layout: Page Image - Full Width ?>
-	        <section class="block--image">
-		        <div class="container">
-			        <div class="row justify-content-center">
-			            <div class="col-12 col-md-12">
-			                <figure>
-			                    <img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="" />
-			                </figure>
-			            </div>
-			        </div>
-		    	</div>
-	    	</section>
-	    <?php endif; ?>
-	    */ ?>
-
 	    <?php if(get_row_layout() == 'page_image'): // layout: Page Image - Full Width ?>
 		    <section class="half--image-new">
 	            <div class="block--half-container" style="background-image: url(<?php the_sub_field('unit_image')?>);">

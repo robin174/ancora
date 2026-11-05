@@ -6,9 +6,22 @@
 
 get_header(); ?>
 
-
 <section class="templ--page-main">
 	<section class="mol--page-main">
+
+		<?php
+		// Does this page have a slider with at least one image? If so, the slider replaces 'section_image'.
+		$has_slider = false;
+		foreach( (array) get_field('sp_builder') as $sp_row ) {
+			foreach( (array) ($sp_row['section_builder'] ?? []) as $layout ) {
+				if( ($layout['acf_fc_layout'] ?? '') === 'section_slider'
+					&& ancoracapital_slider_urls($layout['section_slider_repeater'] ?? []) ) {
+					$has_slider = true;
+					break 2;
+				}
+			}
+		}
+		?>
 
 		<?php if( have_rows('sp_builder') ): ?>
     		<?php while( have_rows('sp_builder') ): the_row(); ?>
@@ -17,11 +30,36 @@ get_header(); ?>
 				<?php if(get_sub_field('section_title') ) : ?>
 					<div><?php the_sub_field('section_title'); ?></div>
 				<?php endif; ?>
+				
 				<section class="org--page-builder" id="<?php the_sub_field('section_id'); ?>">
 					<?php while(has_sub_field('section_builder')): ?>
 						
-						<!-- Add conditional for logo -->
-						<?php if(get_row_layout() == 'section_image'): ?>
+						<!-- Image slider (via https://splidejs.com/), logo fixed on top of the slides -->
+						<?php if(get_row_layout() == 'section_slider'): ?>
+							<?php $slides = ancoracapital_slider_urls( get_sub_field('section_slider_repeater') ); ?>
+							<?php if( $slides ): ?>
+								<section class="half--image-new block--slider">
+									<div class="splide js--image-slider" aria-label="Ancora Capital Partners">
+										<div class="splide__track">
+											<ul class="splide__list">
+												<?php foreach( $slides as $slide_url ): ?>
+													<li class="splide__slide">
+														<div class="block--half-container" style="background-image: url(<?php echo esc_url($slide_url); ?>);"></div>
+													</li>
+												<?php endforeach; ?>
+											</ul>
+										</div>
+									</div>
+
+									<div class="block--half-inner">
+										<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/use-acp-logo-white.png" alt="Ancora Capital Parters">
+									</div>
+								</section>
+							<?php endif; ?>
+						<?php endif; ?>
+
+						<!-- Add conditional for logo (fallback: only shown when the page has no slider images) -->
+						<?php if(get_row_layout() == 'section_image' && ! $has_slider): ?>
 						    <section class="half--image-new">
 					            <div class="block--half-container" style="background-image: url(<?php the_sub_field('sp_image')?>);">
 					                <div class="row justify-content-center">
