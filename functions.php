@@ -36,8 +36,8 @@ function ancoracapital_scripts() {
 						type: 'fade',
 						rewind: true,
 						autoplay: true,
-						interval: 5000,
-						speed: 700,
+						interval: 4000,
+						speed: 800,
 						pauseOnHover: false,
 						arrows: el.querySelectorAll('.splide__slide').length > 1,
 						pagination: el.querySelectorAll('.splide__slide').length > 1
